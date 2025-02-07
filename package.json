@@ -1,0 +1,21 @@
+{
+  "name": "mern_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"/backend/npm run server\" \"/client/npm run client\"",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "web-vitals": "^2.1.4"
+  }
+}
